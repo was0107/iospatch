@@ -20,7 +20,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row + 1];
+    cell.textLabel.text = [NSString stringWithFormat:@"%d", (int)indexPath.row + 1];
     return cell;
 }
 
