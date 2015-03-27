@@ -1,0 +1,11 @@
+{
+     "testimage": {
+         "class": "ModalViewController"
+     },
+     "login": {
+         "url": "http://localhost/efte-h5/login.html"
+     },
+     "testimage": {
+         "url": "http://localhost/efte-h5/testimage.html"
+     }
+ }
