@@ -23,6 +23,7 @@
 }
 
 - (id) init {
+    
     self = [super init];
     if (self) {
         _pageConfig = [self loadBundlePageConfig];
