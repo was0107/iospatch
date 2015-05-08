@@ -1,0 +1,25 @@
+body {
+	font-family: Verdana;
+	width: 100%;
+
+}
+
+.btn {
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	border-radius: 1px;
+	background-color: lightgray;
+	padding-left: 10px;
+	margin-bottom: 1px;
+}
+
+.btn.B5MAppControl-highlight {
+	background-color: darkgray;
+}
+
+#txt_json, #txt_query {
+	width : 90%;
+	height: 100px;
+	margin: auto;
+}

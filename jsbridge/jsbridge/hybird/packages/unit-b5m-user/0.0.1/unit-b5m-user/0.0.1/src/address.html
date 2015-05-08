@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="zepto.js"></script>
+        <script type="text/javascript" src="B5MApp.js"></script>
+        <script type="text/javascript" src="B5MAppControl.js"></script>
+        <link rel="stylesheet" type="text/css" href="address.css"></link>
+    </head>
+    
+    <body>
+        
+        <div style="margin_top:10px; ">
+            <div id="btn_head_icon0" class="cell" >
+                <span class="cell_name">九宫</span>
+                <span class="cell_phone" style:"align:right;">1832343546</span><br>
+                <span class="cell_detail">上海市浦东新区浦东南路1118号鄂尔多斯大厦M层</span>
+                <!--span id="myCart" class="numbe-bg"></span-->
+            </div>
+            <div id="btn_head_icon1"   class="cell">
+                <span class="list-cart">茅十八</span>
+                <span class="list-cart">1832343546</span><br>
+                <span class="cell_detail">上海市浦东新区浦东南路1118号鄂尔多斯大厦M层</span>
+                <!--span id="myCart" class="numbe-bg"></span-->
+            </div>
+            <div id="btn_head_icon2"  class="cell">
+                <span class="cell_name">逍遥</span>
+                <span class="cell_phone">1832343546</span><br>
+                <span class="cell_detail">上海市浦东新区浦东南路1118号鄂尔多斯大厦M层</span>
+                <!--span id="myCart" class="numbe-bg"></span-->
+            </div>
+        <script type="text/javascript">
+            B5MApp.setTitle('地址管理');
+            var global_deal = null;
+            var btnMy = new B5MAppControl($('#btn_head_icon0').get(0));
+            btnMy.onClick = function() {
+                B5MApp.action.open('addAddress', { deal: global_deal });
+            };
+        </script>
+    </body>
+    
+</html>

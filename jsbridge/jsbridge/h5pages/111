@@ -1,0 +1,65 @@
+var btnGo = new B5MAppControl($('#btn_cart').get(0));
+    btnGo.onClick = function() {
+        B5MApp.action.open('cart', {
+            deal: global_deal
+        });
+    };
+    var btnGo = new B5MAppControl($('#btn_order').get(0));
+    btnGo.onClick = function() {
+        B5MApp.action.open('order', {
+            deal: global_deal
+        });
+    };
+    var btnGo = new B5MAppControl($('#btn_address').get(0));
+    btnGo.onClick = function() {
+        B5MApp.action.open('address', {
+            deal: global_deal
+        });
+    };
+    var btnGo = new B5MAppControl($('#btn_collection').get(0));
+    btnGo.onClick = function() {
+        B5MApp.action.open('collection', {
+            deal: global_deal
+        });
+    };
+    var btnGo = new B5MAppControl($('#btn_share').get(0));
+    btnGo.onClick = function() {
+        B5MApp.action.open('share', {
+            deal: global_deal
+        });
+    };
+
+
+
+    <div id="btn_cart" class="btn">
+            <span class="list-cart">我的购物车</span>
+            <span class="list-pic"></span>
+            <!--span id="myCart" class="numbe-bg"></span-->
+        </div>
+        <div id="btn_order" class="btn">
+            <span class="list-cart list-order">我的订单</span>
+            <span class="list-pic"></span>
+        </div>
+        <div id="btn_address" class="btn">
+            <span class="list-cart list-addres">我的收货地址</span>
+            <span class="list-pic"></span>
+        </div>
+        <div id="btn_collection" class="btn">
+            <span class="list-cart list-collection">我的收藏</span>
+            <span class="list-pic"></span>
+        </div>            <div id="btn_share" class="btn">
+            <span class="list-cart list-fx">我的分享</span>
+            <span class="list-pic"></span>
+        </div>
+
+
+           <div class='bann-name'>
+        <span class="bann-nam-img">
+            <img src="http://cdn.b5m.com/upload/web/ucenter/avatars/201306/130/8b73eadcc05e43f3b65b35afb7eb9d0e.jpeg"></span>
+        <span class="bann-nam-mid">
+            <p class = "name cf">
+                ::before <strong>伯光</strong> <span class = "icon"> ::after</span></p>
+            <p class="my">VIP · 全网购物免邮</p>
+            <p class="js">剩余 <b>193</b> 天</p>
+        </span>
+    </div>

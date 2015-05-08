@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="zepto.js"></script>
+        <script type="text/javascript" src="B5MApp.js"></script>
+        <script type="text/javascript" src="B5MAppControl.js"></script>
+        <link rel="stylesheet" type="text/css" href="my.css"></link>
+    </head>
+    
+    <body>
+        
+        <div style="margin_top:10px;">
+            <div id="btn_account_private" class="btn">
+                <span class="list-cart">帐户与安全</span>
+                <span class="list-pic"></span>
+            </div>
+            <div id="btn_normal" class="btn">
+                <span class="list-cart list-order">通用</span>
+                <span class="list-pic"></span>
+            </div>
+            <div id="btn_about_b5m" class="btn" style:"margin_top:10px;">
+                <span class="list-cart list-addres">关于帮5买</span>
+                <span class="list-pic"></span>
+            </div>
+            <div id="btn_logout" class="btn">
+                <span class="list-cart list-collection">退出</span>
+                <span class="list-pic"></span>
+            </div>
+        <script type="text/javascript">
+            B5MApp.setTitle('设置');
+            
+            var global_deal = null;
+            var btnMy = new B5MAppControl($('#btn_account_private').get(0));
+            btnMy.onClick = function() {
+                B5MApp.action.open('account_private', { deal: global_deal });
+            };
+            var btnCjbz = new B5MAppControl($('#btn_normal').get(0));
+            btnCjbz.onClick = function() {
+                B5MApp.action.open('normal', { deal: global_deal });
+            };
+            var btnOrder = new B5MAppControl($('#btn_about_b5m').get(0));
+            btnOrder.onClick = function() {
+                B5MApp.action.open('about', { deal: global_deal });
+            };
+            var btnAddress = new B5MAppControl($('#btn_logout').get(0));
+            btnAddress.onClick = function() {
+                B5MApp.action.open('actionPop', {});
+                B5MApp.action.open('navigator', { "tabId": "0"});
+            };
+        </script>
+    </body>
+    
+</html>

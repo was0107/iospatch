@@ -25,6 +25,16 @@
 		492965311ABBE6CA00527451 /* WASJSWebViewController+Ajax.m in Sources */ = {isa = PBXBuildFile; fileRef = 492965301ABBE6CA00527451 /* WASJSWebViewController+Ajax.m */; };
 		492965341ABBE6E000527451 /* WASJSWebViewController+Navigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 492965331ABBE6E000527451 /* WASJSWebViewController+Navigator.m */; };
 		492965371ABBE6F100527451 /* WASJSWebViewController+ImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 492965361ABBE6F100527451 /* WASJSWebViewController+ImagePicker.m */; };
+		493D4F241AF70CFC005CC732 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F1C1AF70CFC005CC732 /* about.html */; };
+		493D4F251AF70CFC005CC732 /* account_private.html in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F1D1AF70CFC005CC732 /* account_private.html */; };
+		493D4F261AF70CFC005CC732 /* addAddress.html in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F1E1AF70CFC005CC732 /* addAddress.html */; };
+		493D4F271AF70CFC005CC732 /* address.html in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F1F1AF70CFC005CC732 /* address.html */; };
+		493D4F281AF70CFC005CC732 /* my.css in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F201AF70CFC005CC732 /* my.css */; };
+		493D4F291AF70CFC005CC732 /* my.html in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F211AF70CFC005CC732 /* my.html */; };
+		493D4F2A1AF70CFC005CC732 /* normal.html in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F221AF70CFC005CC732 /* normal.html */; };
+		493D4F2B1AF70CFC005CC732 /* setting.html in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F231AF70CFC005CC732 /* setting.html */; };
+		493D4F2D1AF70F5B005CC732 /* address.css in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F2C1AF70F5B005CC732 /* address.css */; };
+		493D4F2F1AF742AB005CC732 /* hybird in Resources */ = {isa = PBXBuildFile; fileRef = 493D4F2E1AF742AB005CC732 /* hybird */; };
 		495474F21ABFBA40002D584A /* B5MAppControl.js in Resources */ = {isa = PBXBuildFile; fileRef = 495474F11ABFBA40002D584A /* B5MAppControl.js */; };
 		495474FA1ABFE1DF002D584A /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = 495474F31ABFE1DF002D584A /* 404.html */; };
 		495474FB1ABFE1DF002D584A /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 495474F41ABFE1DF002D584A /* detail.html */; };
@@ -34,6 +44,14 @@
 		495474FF1ABFE1DF002D584A /* testimage.html in Resources */ = {isa = PBXBuildFile; fileRef = 495474F81ABFE1DF002D584A /* testimage.html */; };
 		495475001ABFE1DF002D584A /* zepto.js in Resources */ = {isa = PBXBuildFile; fileRef = 495474F91ABFE1DF002D584A /* zepto.js */; };
 		495475031AC029B2002D584A /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495475021AC029B2002D584A /* ModalViewController.m */; };
+		49A520F31AF6420A00A04826 /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = 49A520ED1AF6420A00A04826 /* 404.html */; };
+		49A520F41AF6420A00A04826 /* B5MApp.js in Resources */ = {isa = PBXBuildFile; fileRef = 49A520EE1AF6420A00A04826 /* B5MApp.js */; };
+		49A520F51AF6420A00A04826 /* B5MAppControl.js in Resources */ = {isa = PBXBuildFile; fileRef = 49A520EF1AF6420A00A04826 /* B5MAppControl.js */; };
+		49A520F61AF6420A00A04826 /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = 49A520F01AF6420A00A04826 /* index.css */; };
+		49A520F71AF6420A00A04826 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 49A520F11AF6420A00A04826 /* index.html */; };
+		49A520F81AF6420A00A04826 /* zepto.js in Resources */ = {isa = PBXBuildFile; fileRef = 49A520F21AF6420A00A04826 /* zepto.js */; };
+		49A520FB1AF6428700A04826 /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = 49A520F91AF6428700A04826 /* index.css */; };
+		49A520FC1AF6428700A04826 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 49A520FA1AF6428700A04826 /* index.html */; };
 		49FCECBD1AC3EB7B00FD0ECC /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49FCECBC1AC3EB7B00FD0ECC /* Reveal.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +98,16 @@
 		492965331ABBE6E000527451 /* WASJSWebViewController+Navigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WASJSWebViewController+Navigator.m"; sourceTree = "<group>"; };
 		492965351ABBE6F100527451 /* WASJSWebViewController+ImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WASJSWebViewController+ImagePicker.h"; sourceTree = "<group>"; };
 		492965361ABBE6F100527451 /* WASJSWebViewController+ImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WASJSWebViewController+ImagePicker.m"; sourceTree = "<group>"; };
+		493D4F1C1AF70CFC005CC732 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		493D4F1D1AF70CFC005CC732 /* account_private.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = account_private.html; sourceTree = "<group>"; };
+		493D4F1E1AF70CFC005CC732 /* addAddress.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = addAddress.html; sourceTree = "<group>"; };
+		493D4F1F1AF70CFC005CC732 /* address.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = address.html; sourceTree = "<group>"; };
+		493D4F201AF70CFC005CC732 /* my.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = my.css; sourceTree = "<group>"; };
+		493D4F211AF70CFC005CC732 /* my.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = my.html; sourceTree = "<group>"; };
+		493D4F221AF70CFC005CC732 /* normal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = normal.html; sourceTree = "<group>"; };
+		493D4F231AF70CFC005CC732 /* setting.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = setting.html; sourceTree = "<group>"; };
+		493D4F2C1AF70F5B005CC732 /* address.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = address.css; sourceTree = "<group>"; };
+		493D4F2E1AF742AB005CC732 /* hybird */ = {isa = PBXFileReference; lastKnownFileType = folder; path = hybird; sourceTree = "<group>"; };
 		495474F11ABFBA40002D584A /* B5MAppControl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = B5MAppControl.js; sourceTree = "<group>"; };
 		495474F31ABFE1DF002D584A /* 404.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 404.html; sourceTree = "<group>"; };
 		495474F41ABFE1DF002D584A /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
@@ -90,6 +118,14 @@
 		495474F91ABFE1DF002D584A /* zepto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zepto.js; sourceTree = "<group>"; };
 		495475011AC029B2002D584A /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		495475021AC029B2002D584A /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		49A520ED1AF6420A00A04826 /* 404.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 404.html; sourceTree = "<group>"; };
+		49A520EE1AF6420A00A04826 /* B5MApp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = B5MApp.js; sourceTree = "<group>"; };
+		49A520EF1AF6420A00A04826 /* B5MAppControl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = B5MAppControl.js; sourceTree = "<group>"; };
+		49A520F01AF6420A00A04826 /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
+		49A520F11AF6420A00A04826 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		49A520F21AF6420A00A04826 /* zepto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zepto.js; sourceTree = "<group>"; };
+		49A520F91AF6428700A04826 /* index.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = index.css; sourceTree = "<group>"; };
+		49A520FA1AF6428700A04826 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		49FCECBC1AC3EB7B00FD0ECC /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		77CEC2E3CF31448C81A1B923 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5CDE68693F34D6BDC180D0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +184,7 @@
 		490E17231ABA68C100F77A48 /* JSBridge */ = {
 			isa = PBXGroup;
 			children = (
+				493D4F2E1AF742AB005CC732 /* hybird */,
 				490E174A1ABA695300F77A48 /* h5pages */,
 				490E174B1ABA695300F77A48 /* WASJSBridge */,
 				490E17281ABA68C100F77A48 /* AppDelegate.h */,
@@ -192,6 +229,17 @@
 		490E174A1ABA695300F77A48 /* h5pages */ = {
 			isa = PBXGroup;
 			children = (
+				493D4F1C1AF70CFC005CC732 /* about.html */,
+				493D4F1D1AF70CFC005CC732 /* account_private.html */,
+				493D4F1E1AF70CFC005CC732 /* addAddress.html */,
+				493D4F1F1AF70CFC005CC732 /* address.html */,
+				493D4F2C1AF70F5B005CC732 /* address.css */,
+				493D4F201AF70CFC005CC732 /* my.css */,
+				493D4F211AF70CFC005CC732 /* my.html */,
+				493D4F221AF70CFC005CC732 /* normal.html */,
+				493D4F231AF70CFC005CC732 /* setting.html */,
+				49A520F91AF6428700A04826 /* index.css */,
+				49A520FA1AF6428700A04826 /* index.html */,
 				495474F31ABFE1DF002D584A /* 404.html */,
 				495474F41ABFE1DF002D584A /* detail.html */,
 				495474F61ABFE1DF002D584A /* home.html */,
@@ -201,6 +249,7 @@
 				490E17521ABA70C800F77A48 /* B5MApp.js */,
 				495474F11ABFBA40002D584A /* B5MAppControl.js */,
 				495474F91ABFE1DF002D584A /* zepto.js */,
+				49A520EC1AF6420900A04826 /* My */,
 			);
 			path = h5pages;
 			sourceTree = "<group>";
@@ -254,6 +303,19 @@
 				490E175E1ABAC85700F77A48 /* WASJSUtils.m */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		49A520EC1AF6420900A04826 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				49A520ED1AF6420A00A04826 /* 404.html */,
+				49A520EE1AF6420A00A04826 /* B5MApp.js */,
+				49A520EF1AF6420A00A04826 /* B5MAppControl.js */,
+				49A520F01AF6420A00A04826 /* index.css */,
+				49A520F11AF6420A00A04826 /* index.html */,
+				49A520F21AF6420A00A04826 /* zepto.js */,
+			);
+			path = My;
 			sourceTree = "<group>";
 		};
 		DED511D97D9D05459FE88ACC /* Pods */ = {
@@ -351,14 +413,32 @@
 				495474FD1ABFE1DF002D584A /* home.html in Resources */,
 				490EDA3E1AC150710083D941 /* pages.json in Resources */,
 				495474FE1ABFE1DF002D584A /* login.html in Resources */,
+				493D4F261AF70CFC005CC732 /* addAddress.html in Resources */,
+				493D4F271AF70CFC005CC732 /* address.html in Resources */,
 				490E17531ABA70C800F77A48 /* B5MApp.js in Resources */,
+				49A520FC1AF6428700A04826 /* index.html in Resources */,
 				495474FF1ABFE1DF002D584A /* testimage.html in Resources */,
+				49A520F51AF6420A00A04826 /* B5MAppControl.js in Resources */,
 				495474F21ABFBA40002D584A /* B5MAppControl.js in Resources */,
+				493D4F2D1AF70F5B005CC732 /* address.css in Resources */,
+				49A520F61AF6420A00A04826 /* index.css in Resources */,
+				493D4F251AF70CFC005CC732 /* account_private.html in Resources */,
+				49A520F81AF6420A00A04826 /* zepto.js in Resources */,
+				493D4F291AF70CFC005CC732 /* my.html in Resources */,
 				495474FA1ABFE1DF002D584A /* 404.html in Resources */,
 				490E17351ABA68C100F77A48 /* LaunchScreen.xib in Resources */,
 				495475001ABFE1DF002D584A /* zepto.js in Resources */,
+				49A520FB1AF6428700A04826 /* index.css in Resources */,
+				493D4F2F1AF742AB005CC732 /* hybird in Resources */,
+				49A520F31AF6420A00A04826 /* 404.html in Resources */,
 				490E17321ABA68C100F77A48 /* Images.xcassets in Resources */,
+				493D4F281AF70CFC005CC732 /* my.css in Resources */,
 				495474FB1ABFE1DF002D584A /* detail.html in Resources */,
+				493D4F241AF70CFC005CC732 /* about.html in Resources */,
+				49A520F41AF6420A00A04826 /* B5MApp.js in Resources */,
+				493D4F2B1AF70CFC005CC732 /* setting.html in Resources */,
+				49A520F71AF6420A00A04826 /* index.html in Resources */,
+				493D4F2A1AF70CFC005CC732 /* normal.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

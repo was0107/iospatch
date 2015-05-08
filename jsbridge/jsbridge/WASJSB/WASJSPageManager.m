@@ -62,6 +62,11 @@
         if (path) {
             return [NSURL URLWithString:path];
         }
+        
+        NSURL *url = [NSURL URLWithString:page];
+        if (url) {
+            return url;
+        }
     }
     return nil;
 }

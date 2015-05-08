@@ -27,6 +27,70 @@ void  uncaughtExceptionHandler(NSException * exception) {
 #ifdef DEBUG
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
 #endif
+    
+    NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"hybird"];
+    NSString *folderPath = [documentsDirectory stringByAppendingPathComponent:@"Files"];
+    NSLog(@"Source Path: %@\n Documents Path: %@ \n Folder Path: %@", sourcePath, documentsDirectory, folderPath);
+    
+    NSError *error;
+    
+    [[NSFileManager defaultManager] copyItemAtPath:sourcePath
+                                            toPath:documentsDirectory
+                                             error:&error];
+    
+    if (error) {
+        
+        NSLog(@"Error description-%@ \n", [error localizedDescription]);
+        NSLog(@"Error reason-%@", [error localizedFailureReason]);
+    }
+    
+    
+    
+//    NSFileManager *fileManager = [NSFileManager defaultManager];
+//    NSString *folder = [NSString stringWithFormat:@"%@/hybird/packages/",[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]];
+//    if (![fileManager fileExistsAtPath:folder]) {
+//        [fileManager createDirectoryAtPath:folder withIntermediateDirectories:YES attributes:nil error:nil];
+//    }
+//    
+//    NSFileManager *manager = [NSFileManager defaultManager];
+//    NSString *bundleConfig = [[NSBundle mainBundle] pathForResource:@"pages" ofType:@"json"];
+//    NSString *path = folder;//[[NSString alloc] initWithString:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]];
+//    
+//    NSError *eror = nil;
+//    if ([manager isReadableFileAtPath:bundleConfig ]) {
+//        BOOL FLAG = [manager copyItemAtURL:[NSURL fileURLWithPath:bundleConfig] toURL:[NSURL fileURLWithPath:path] error:&eror];
+//        if (!FLAG && eror) {
+//            NSLog(@"eror = %@", eror);
+//        }
+//    }
+    
+    
+//    NSString *sourcePath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"hybird"];
+//    
+//    
+//    NSArray *paths1 = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *documentsDirectory = [paths1 objectAtIndex:0];
+//    
+//    NSError *error1;
+//    NSArray *resContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:sourcePath error: &error1];
+//    if (error1) {
+//        NSLog(@"error1 : %@",error1);
+//    }
+//    [resContents enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop)
+//     {
+//         NSError* error;
+//         if (![[NSFileManager defaultManager]
+//               copyItemAtPath:[sourcePath stringByAppendingPathComponent:obj]
+//               toPath:[documentsDirectory stringByAppendingPathComponent:obj]
+//               error:&error])
+//         NSLog(@"%@", [error localizedDescription]);
+//     }];
+    
+    
+   
+    
+    
     ViewController *vc = [ViewController new];
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="zepto.js"></script>
+        <script type="text/javascript" src="B5MApp.js"></script>
+        <script type="text/javascript" src="B5MAppControl.js"></script>
+        <link rel="stylesheet" type="text/css" href="my.css"></link>
+    </head>
+    
+    <body>
+        <div id="btn_top" style="margin_top:10px; align:center; height:150px;">
+            <span class="bann-nam-img" style:"align:center">
+                <img src="http://cdn.b5m.com/upload/web/ucenter/avatars/201306/130/8b73eadcc05e43f3b65b35afb7eb9d0e.jpeg">
+            </span><br>
+            <span class="list-cart">帮5买</span>
+            <span class="list-cart">V3.3.6</span>
+            <span class="list-pic"></span>
+        </div>
+        <div style="margin_top:10px;">
+            <div id="btn_version" class="btn">
+                <span class="list-cart">版本更新</span>
+                <span class="list-pic"></span>
+            </div>
+            <div id="btn_new_function" class="btn">
+                <span class="list-cart list-order">新功能介绍</span>
+                <span class="list-pic"></span>
+            </div>
+            <div id="btn_private" class="btn">
+                <span class="list-cart list-addres">用户徇私及服务</span>
+                <span class="list-pic"></span>
+            </div>
+        <script type="text/javascript">
+            B5MApp.setTitle('关于帮5买');
+            
+            var global_deal = null;
+            var btnMy = new B5MAppControl($('#btn_version').get(0));
+            btnMy.onClick = function() {
+                ;//B5MApp.action.open('home', { deal: global_deal });
+            };
+            var btnCjbz = new B5MAppControl($('#btn_new_function').get(0));
+            btnCjbz.onClick = function() {
+                ;//B5MApp.action.open('detail', { deal: global_deal });
+            };
+            var btnOrder = new B5MAppControl($('#btn_private').get(0));
+            btnOrder.onClick = function() {
+                ;//B5MApp.action.open('home', { deal: global_deal });
+            };
+        </script>
+    </body>
+    
+</html>

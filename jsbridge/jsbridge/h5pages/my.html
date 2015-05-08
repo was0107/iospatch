@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="zepto.js"></script>
+        <script type="text/javascript" src="B5MApp.js"></script>
+        <script type="text/javascript" src="B5MAppControl.js"></script>
+        <link rel="stylesheet" type="text/css" href="my.css"></link>
+    </head>
+    
+    <body>
+        
+        <div style="margin_top:10px;">
+            <div id="btn_head_icon" class="btn">
+                <span class="list-cart">头像</span>
+                <span class="list-pic"></span>
+                <!--span id="myCart" class="numbe-bg"></span-->
+            </div>
+            <div id="btn_nick_name" class="btn">
+                <span class="list-cart list-order">昵称</span>
+                <span class="list-pic"></span>
+            </div>
+            <div id="btn_sex" class="btn">
+                <span class="list-cart list-addres">性别</span>
+                <span class="list-pic"></span>
+            </div>
+            <div id="btn_zone" class="btn">
+                <span class="list-cart list-collection">地区</span>
+                <span class="list-pic"></span>
+            </div>
+            <div id="btn_birthday" class="btn">
+                <span class="list-cart list-fx">生日</span>
+                <span class="list-pic"></span>
+            </div>
+        <script type="text/javascript">
+            B5MApp.setTitle('个人资料');
+            
+            var global_deal = null;
+            var btnMy = new B5MAppControl($('#btn_head_icon').get(0));
+            btnMy.onClick = function() {
+                B5MApp.action.open('home', { deal: global_deal });
+            };
+            var btnCjbz = new B5MAppControl($('#btn_nick_name').get(0));
+            btnCjbz.onClick = function() {
+                B5MApp.action.open('detail', { deal: global_deal });
+            };
+            var btnOrder = new B5MAppControl($('#btn_sex').get(0));
+            btnOrder.onClick = function() {
+                B5MApp.action.open('home', { deal: global_deal });
+            };
+            var btnAddress = new B5MAppControl($('#btn_zone').get(0));
+            btnAddress.onClick = function() {
+                B5MApp.action.open('home', { deal: global_deal });
+            };
+            var btnShare = new B5MAppControl($('#btn_birthday').get(0));
+            btnShare.onClick = function() {
+                B5MApp.action.open('home', { deal: global_deal });
+            };
+        </script>
+    </body>
+    
+</html>
